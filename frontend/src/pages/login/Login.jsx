@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Login = () => {
   return (
@@ -28,15 +29,17 @@ const Login = () => {
               type="password"
               placeholder="Enter Password"
               className="w-full input input-bordered h-10 text-black bg-white"
+              autoComplete='password'
             />
           </div>
 
-          <a
+          <Link
+            to={'/signup'}
             href="#"
             className="text-sm hover:underline hover:text-blue-600 mt-3 inline-block text-gray-600"
           >
             {"Don't"} have an account?
-          </a>
+          </Link>
 
           <div>
             <button className="btn btn-block btn-sm mt-5 bg-red-500 hover:bg-red-700 text-white border-none">
