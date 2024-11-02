@@ -11,7 +11,7 @@ import connectToMongoDB from "./db/connectToMongoDB.js";
 const app = express();
 
 dotenv.config();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 5001;
 
 app.use(express.json()); //parse incoming requests
 app.use(cookieParser());
