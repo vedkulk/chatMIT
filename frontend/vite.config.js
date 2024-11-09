@@ -8,7 +8,7 @@ export default defineConfig({
     port: 3000,
     proxy: {
       "/api": {
-        target: "http://localhost:5001", // Switch to HTTP if HTTPS is not configured
+        target: "https://chatmit.onrender.com", // Switch to HTTP if HTTPS is not configured
         changeOrigin: true,
         secure: false
       }
