@@ -12,7 +12,7 @@ const useGetConversations = () => {
 				if (data.error) {
 					throw new Error(data.error);
 				}
-				setConversations(data);
+				setConversations(Array.isArray(data) ? data : []);
 			} catch (error) {
 				toast.error(error.message);
 			} finally {
