@@ -3,6 +3,7 @@
     {
       "source": "/(.*)",
       "destination": "/"
-    }
+    },
+    { "source": "/api/:path(.*)", "destination": "https://chatmit.onrender.com/:path" }
   ]
 }
