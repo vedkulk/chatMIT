@@ -1,9 +1,9 @@
 services:
   - type: web
-    name: chat-app
+    name: chatmit-app
     env: node
     plan: free
-    buildCommand: npm run build
+    buildCommand: npm install && npm run build
     startCommand: npm start
     envVars:
       - key: NODE_ENV
@@ -12,5 +12,3 @@ services:
         sync: false
       - key: JWT_SECRET
         generateValue: true
-      - key: PORT
-        value: 10000
